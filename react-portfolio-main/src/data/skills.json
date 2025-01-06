@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Data Analysis",
+    "imageSrc": "skills/html.png"
+  },
+  {
+    "title": "UI/UX Design",
+    "imageSrc": "skills/css.png"
+  },
+  {
+    "title": "Agile",
+    "imageSrc": "skills/react.png"
+  },
+  {
+    "title": "A/B Testing",
+    "imageSrc": "skills/node.png"
+  },
+  {
+    "title": "User Research",
+    "imageSrc": "skills/graphql.png"
+  },
+  {
+    "title": "Prototyping",
+    "imageSrc": "skills/mongodb.png"
+  },
+  {
+    "title": "Figma",
+    "imageSrc": "skills/figma.png"
+  }
+]

@@ -1,0 +1,81 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 50px 10%;
+  color: var(--color-text);
+}
+
+.leftColumn {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.resumeButton {
+  text-decoration: none;
+  color: #e16534; /* Matches the hero button color */
+  border: 2px solid #e16534; /* Red outline */
+  background-color: transparent; /* Transparent background */
+  border-radius: 20px; /* Slightly rounded corners */
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 20px; /* Oval shape */
+  text-align: left;
+  transition: all 0.3s ease-in-out; /* Smooth hover effect */
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25); /* Subtle shadow */
+}
+
+.resumeButton:hover {
+  background-color: #e16534; /* Red background on hover */
+  color: white; /* White text on hover */
+}
+
+.rightColumn {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.experienceSection {
+  background: var(--color-secondary-light);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.company {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.position {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.dates {
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .leftColumn,
+  .rightColumn {
+    width: 100%;
+  }
+}

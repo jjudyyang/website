@@ -1,0 +1,71 @@
+.container {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.9); /* Lighten background for better contrast */
+  border-radius: 15px;
+  padding: 50px; /* Adjusted for more compact design */
+  margin: 50px 10%; /* Simplified margin */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for a clean look */
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px; /* Space between text and image */
+}
+
+.textBox {
+  flex: 1;
+  color: #000000; /* Black text for readability */
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.textBox p {
+  margin-bottom: 20px;
+}
+
+.textBox a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #e16534; /* Button background color */
+  color: #ffffff; /* Button text color */
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.textBox a:hover {
+  background-color: #388e3c; /* Darker green on hover */
+}
+
+.imageBox {
+  flex: 1;
+  text-align: center;
+}
+
+.imageBox img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Slightly rounded image corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow around the image */
+}
+
+@media screen and (max-width: 830px) {
+  .content {
+    flex-direction: column;
+    text-align: center; /* Center-align for smaller screens */
+  }
+
+  .imageBox {
+    margin-top: 20px;
+  }
+
+  .textBox a {
+    margin: 20px auto 0;
+  }
+}

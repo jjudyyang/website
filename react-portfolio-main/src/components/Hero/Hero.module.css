@@ -1,0 +1,102 @@
+@import "../../vars.css";
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 49px;
+  z-index: 1;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--color-text);
+  z-index: 1;
+}
+
+.title {
+  font-size: 72px;
+  font-weight: 900;
+  margin-bottom: 33px;
+  font-family: var(--font-roboto);
+  -webkit-text-fill-color: var(--color-text); /* Removed gradient */
+  -webkit-background-clip: unset; /* Disabled background clip */
+}
+
+.description {
+  font-size: 30px;
+  font-family: var(--font-roboto);
+  margin-bottom: 52px;
+}
+
+.contactBtn {
+  text-decoration: none;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  border-radius: 100px;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 17px 26px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.heroImg {
+  width: 50%;
+  z-index: 1;
+
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+/* Removed topBlur and bottomBlur completely */
+.topBlur,
+.bottomBlur {
+  display: none; /* Hides these elements */
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  .content {
+    align-items: center;
+  }
+}
+
+.contactBtn {
+  text-decoration: none;
+  color: #e16534; /* Text color red */
+  border: 2px solid #e16534; /* Red outline */
+  background-color: transparent; /* Transparent background */
+  border-radius: 20px; /* Less round corners */
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 20px; /* Adjust padding for oval shape */
+  text-align: center;
+  transition: all 0.3s ease-in-out; /* Smooth hover transition */
+}
+
+.contactBtn:hover {
+  background-color: #e16534; /* Fill background with red on hover */
+  color: white; /* Change text color to white */
+}
