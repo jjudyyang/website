@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./About.module.css";
+import { getImageUrl } from "../../utils";
 
 export const About = () => {
   return (
@@ -9,7 +10,7 @@ export const About = () => {
         <div className={styles.textBox}>
           <p>
             Hi there—I’m <strong>Judy Yang</strong>, a Computer Science student
-            at the University of Waterloo with a deep passion for problem-solving and
+            at the University of Waterloo with a passion for problem-solving and
             creating innovative products that bring everyday delight.
           </p>
           <p>
@@ -22,19 +23,19 @@ export const About = () => {
             my community.
           </p>
           <p>
-            In my free time, you can find me editing videos, recipe testing, planning my
-            next bike trip, or dreaming of a business idea.
+            In my free time, you can find me editing videos, recipe testing or planning my
+            next bike trip.
           </p>
           <a href="/resume.pdf" className={styles.button} target="_blank" rel="noopener noreferrer">
-            View My Resume
+            Resume
           </a>
         </div>
 
         {/* Column 2: Image */}
         <div className={styles.imageBox}>
           <img
-            src="/path-to-your-image.jpg"
-            alt="Judy Yang smiling with a bike in the background"
+            src={getImageUrl("about/judyonbridge.png")}
+            alt="Judy Yang smiling with bridge in the background"
             className={styles.image}
           />
         </div>

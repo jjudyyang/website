@@ -4,6 +4,11 @@ import styles from "./Experience.module.css";
 export const Experience = () => {
   const experiences = [
     {
+      company: "Pepper eCommerce",
+      position: "Associate Product Manager Intern",
+      dates: "January 2025 - Present",
+    },
+    {
       company: "Treasury Board Secretariat Ontario",
       position: "Product Management Intern",
       dates: "May 2024 - November 2024",
@@ -17,6 +22,11 @@ export const Experience = () => {
       company: "Kindred AI",
       position: "QA Robotics Engineer",
       dates: "January 2023 - April 2023",
+    },
+    {
+      company: "Veriday",
+      position: "Software Developer",
+      dates: "May 2022 - August 2022",
     },
   ];
 
